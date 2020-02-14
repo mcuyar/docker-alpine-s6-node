@@ -1,0 +1,8 @@
+#!/usr/bin/with-contenv sh
+
+cd /var/www;
+
+FILE=package.json
+if [ -f "$FILE" ]; then
+    exec npm run serve
+fi
